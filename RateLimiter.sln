@@ -1,12 +1,18 @@
-Microsoft Visual Studio Solution File, Format Version 12.00
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RateLimiter", "RateLimiter\RateLimiter.csproj", "{712F8221-B991-46EC-9266-7AA4D76F8D3E}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{35E91BBF-E7EB-4997-9063-58C6C19CFD40}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RateLimiter.Tests", "RateLimiter.Tests\RateLimiter.Tests.csproj", "{DEE5BFF6-5430-40AF-A6FC-0FB8E1E51B74}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RateLimiter", "src\RateLimiter\RateLimiter.csproj", "{93A19F82-090D-4CF4-87A4-DE7B5782490F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RateLimiter.Demo", "RateLimiter.Demo\RateLimiter.Demo.csproj", "{42500D7E-D294-4D3D-AACE-0E44239A288E}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{9F4EE908-76B6-4682-B147-7C646B224F97}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RateLimiter.Tests", "tests\RateLimiter.Tests\RateLimiter.Tests.csproj", "{AF88DFBC-9BAF-4D0F-A6FF-FD2901BC97C7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{2BF93853-CB12-41AF-A107-5FA910BD0215}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RateLimiter.Demo", "samples\RateLimiter.Demo\RateLimiter.Demo.csproj", "{F098423B-FCFC-4506-8DF2-D85B97809459}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -14,23 +20,28 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{712F8221-B991-46EC-9266-7AA4D76F8D3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{712F8221-B991-46EC-9266-7AA4D76F8D3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{712F8221-B991-46EC-9266-7AA4D76F8D3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{712F8221-B991-46EC-9266-7AA4D76F8D3E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DEE5BFF6-5430-40AF-A6FC-0FB8E1E51B74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DEE5BFF6-5430-40AF-A6FC-0FB8E1E51B74}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DEE5BFF6-5430-40AF-A6FC-0FB8E1E51B74}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DEE5BFF6-5430-40AF-A6FC-0FB8E1E51B74}.Release|Any CPU.Build.0 = Release|Any CPU
-		{42500D7E-D294-4D3D-AACE-0E44239A288E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{42500D7E-D294-4D3D-AACE-0E44239A288E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{42500D7E-D294-4D3D-AACE-0E44239A288E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{42500D7E-D294-4D3D-AACE-0E44239A288E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93A19F82-090D-4CF4-87A4-DE7B5782490F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93A19F82-090D-4CF4-87A4-DE7B5782490F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93A19F82-090D-4CF4-87A4-DE7B5782490F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93A19F82-090D-4CF4-87A4-DE7B5782490F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF88DFBC-9BAF-4D0F-A6FF-FD2901BC97C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF88DFBC-9BAF-4D0F-A6FF-FD2901BC97C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF88DFBC-9BAF-4D0F-A6FF-FD2901BC97C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF88DFBC-9BAF-4D0F-A6FF-FD2901BC97C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F098423B-FCFC-4506-8DF2-D85B97809459}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F098423B-FCFC-4506-8DF2-D85B97809459}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F098423B-FCFC-4506-8DF2-D85B97809459}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F098423B-FCFC-4506-8DF2-D85B97809459}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C561CB25-4433-47BD-A2B2-1086997D1BA7}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{93A19F82-090D-4CF4-87A4-DE7B5782490F} = {35E91BBF-E7EB-4997-9063-58C6C19CFD40}
+		{AF88DFBC-9BAF-4D0F-A6FF-FD2901BC97C7} = {9F4EE908-76B6-4682-B147-7C646B224F97}
+		{F098423B-FCFC-4506-8DF2-D85B97809459} = {2BF93853-CB12-41AF-A107-5FA910BD0215}
 	EndGlobalSection
 EndGlobal
