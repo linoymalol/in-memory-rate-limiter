@@ -3,4 +3,8 @@ using RateLimiter.Rules;
 
 var limiter = new InMemoryRateLimiter(new RateLimiterOptions());
 
-Console.WriteLine($"Rate limiter demo placeholder: {limiter.GetType().Name}");
+for (int i = 1; i <= 5; i++)
+{
+    var result = limiter.Allow("user1", "/orders", DateTimeOffset.UtcNow);
+    Console.WriteLine($"Request {i}: Allowed={result.Allowed}, RetryAfter={result.RetryAfter}");
+}
