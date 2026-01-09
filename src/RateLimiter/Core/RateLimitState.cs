@@ -7,4 +7,6 @@ internal sealed class RateLimitState
     public object SyncRoot { get; } = new();
 
     public Queue<long> AllowedTicks { get; } = new();
+
+    public long LastSeenUtcTicks;
 }
