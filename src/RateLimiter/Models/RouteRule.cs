@@ -1,3 +1,3 @@
 namespace RateLimiter.Models;
 
-public sealed record RouteRule(string Route, int PermitLimit, TimeSpan Window);
+public sealed record RouteRule(int MaxRequests, TimeSpan Window);
